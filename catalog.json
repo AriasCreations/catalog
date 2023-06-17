@@ -1,0 +1,37 @@
+{
+  "charts": {},
+  "stable": {},
+  "indev": {
+    "harbinger": {
+      "app_readme": "<p>Harbinger</p>\n\n<p>This app is the multipurpose management software in development by and for use by Aria's Creations",
+      "categories": [
+        "database"
+      ],
+      "description": "We Are Harbinger",
+      "healthy": true,
+      "healthy_error": null,
+      "home": "https://harbinger.zontreck.dev",
+      "location": "/work/catalog/indev/harbinger",
+      "latest_version": "1.0.175",
+      "latest_app_version": "latest",
+      "latest_human_version": "latest_1.0.175",
+      "last_update": "2023-06-17 01:01:00",
+      "name": "Harbinger",
+      "recommended": false,
+      "title": "Harbinger Server",
+      "maintainers": [
+        {
+          "email": "tarapiccari@gmail.com",
+          "name": "Tara Piccari",
+          "url": "https://harbinger.zontreck.dev"
+        }
+      ],
+      "tags": [],
+      "screenshots": [],
+      "sources": [
+        "https://github.com/AriasCreations/catalog/charts/indev/harbinger"
+      ],
+      "icon_url": null
+    }
+  }
+}
