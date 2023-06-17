@@ -1,3 +1,6 @@
+groups:
+  - name: Timezone
+    description: Timezone Settings
 questions:
   - variable: TZ
     label: Timezone
