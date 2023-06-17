@@ -1,0 +1,9 @@
+questions:
+  - variable: TZ
+    label: Timezone
+    group: "General Settings"
+    schema:
+      type: string
+      default: "America/Phoenix"
+      $ref:
+        - "definitions/timezone"
