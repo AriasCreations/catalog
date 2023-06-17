@@ -1,0 +1,45 @@
+image:
+  repository: github.com/ariascreations/Harbinger
+  pullPolicy: IfNotPresent
+  tag: main
+
+securityContext:
+  container:
+    readOnlyRootFilesystem: true
+    runAsNonRoot: true
+    runAsUser: 1000
+    runAsGroup: 1000
+
+service:
+  main:
+    ports:
+      main:
+        targetPort: 7768
+        protocol: tcp
+        port: 9768
+      simulator:
+        targetPort: 7769
+        protocol: udp
+        port: 9769
+
+workload:
+  main:
+    podSpec:
+      containers:
+        main:
+          probes:
+            liveness:
+              type: http
+              path: /
+            readiness:
+              type: http
+              path: /
+            startup:
+              type: http
+              path: /
+          env: {}
+
+persistence:
+  data:
+    enabled: true
+    mountPath: /data
